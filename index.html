@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vitor e Isha - Descubra o Rio</title>
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --verde: #009739;
+      --amarelo: #ffcc29;
+      --azul: #002776;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    body {
+      background-color: #f0f0f0;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      background: url('imagem abstrata.png') center/cover no-repeat;
+      text-align: center;
+      padding: 4rem 1rem;
+      color: white;
+    }
+
+   header img {
+  width: 140px;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+  transition: transform 0.3s ease;
+}
+header img:hover {
+  transform: scale(1.05);
+}
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-top: 1rem;
+    }
+
+    header h1::after {
+      content: " 🇧🇷 🇮🇪";
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      font-weight: 300;
+    }
+
+    .links-section {
+      background: url('cristoredentor.jpg') center/cover no-repeat;
+      padding: 3rem 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.2rem;
+    }
+
+    .link-button {
+      width: 90%;
+      max-width: 460px;
+      padding: 1rem 1.5rem;
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: 600;
+      color: white;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      backdrop-filter: blur(4px);
+    }
+
+    .link-button:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    .verde {
+      background-color: var(--verde);
+    }
+
+    .amarelo {
+      background-color: var(--amarelo);
+      color: black;
+    }
+
+    .azul {
+      background-color: var(--azul);
+    }
+
+    .social-icons {
+      background-color: white;
+      padding: 2rem;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .social-icons img {
+      width: 40px;
+      height: 40px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .social-icons img:hover {
+      transform: scale(1.2);
+    }
+  </style>
+</head>
+<body>
+  <header data-aos="fade-down">
+    <img src="fotohead.jpeg" alt="Foto de Vitor e Isha">
+    <h1>Vitor e Isha</h1>
+    <p>Descubra o Rio com um casal intercultural!</p>
+  </header>
+
+  <section class="links-section">
+    <div class="link-button verde" data-aos="fade-up">🔥 🎥 Vídeos que bombaram</div>
+    <div class="link-button amarelo" data-aos="fade-up" data-aos-delay="100">💼 Mídia Kit + Contato para Parcerias</div>
+    <div class="link-button azul" data-aos="fade-up" data-aos-delay="200">🌍 Experiência Turística Personalizada</div>
+    <div class="link-button verde" data-aos="fade-up" data-aos-delay="300">✈️ Roteiros e Lugares Incríveis em Niterói</div>
+    <div class="link-button amarelo" data-aos="fade-up" data-aos-delay="400">💰 Guia de Economia para sua Próxima Viagem</div>
+  </section>
+
+  <section class="social-icons">
+    <img src="instagram.png" alt="Instagram">
+    <img src="whatsapp.png" alt="WhatsApp">
+	<img src="tiktok.png" alt="TikTok">
+    <img src="gmail.png" alt="Gmail">
+  </section>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800,
+      once: false,
+      mirror: true,
+    });
+  </script>
+</body>
+</html>
